@@ -1,0 +1,25 @@
+nav {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 24px;
+}
+
+ul {
+	display: flex;
+	padding: 50px 0;
+	gap: 20px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+li {
+	list-style-type: none;
+}
+
+.nav-link {
+	color: #ffffff;
+}
+
+.right {
+	margin-left: auto;
+}
