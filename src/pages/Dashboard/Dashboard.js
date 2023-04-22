@@ -1,6 +1,11 @@
 import React from 'react';
 import { Chart as ChartJS } from 'chart.js/auto';
-import { ExerciseChart, FoodChart, WaterDataChart } from '../../components';
+import {
+	ExerciseChart,
+	FoodChart,
+	SleepTrackingChart,
+	WaterDataChart,
+} from '../../components';
 
 const Dashboard = () => {
 	const options = {
@@ -16,6 +21,7 @@ const Dashboard = () => {
 			<FoodChart options={options} />
 			<ExerciseChart options={options} />
 			<WaterDataChart options={options} />
+			<SleepTrackingChart options={options} />
 		</div>
 	);
 };
