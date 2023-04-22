@@ -1,6 +1,6 @@
 import React from 'react';
 import { Chart as ChartJS } from 'chart.js/auto';
-import { FoodChart } from '../../components';
+import { ExerciseChart, FoodChart } from '../../components';
 
 const Dashboard = () => {
 	const options = {
@@ -13,7 +13,8 @@ const Dashboard = () => {
 	return (
 		<div className='dashboard'>
 			<h1>Hi there! Here is Your Dashboard</h1>
-			<FoodChart />
+			<FoodChart options={options} />
+			<ExerciseChart options={options} />
 		</div>
 	);
 };
