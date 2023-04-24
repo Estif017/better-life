@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
+import { dates } from '../../utils/daysLabel';
 
 const SleepTrackingChart = ({ options }) => {
 	const [sleepData, setSleepData] = useState({
-		labels: [
-			'Monday',
-			'Tuesday',
-			'Wednesday',
-			'Thursday',
-			'Friday',
-			'Saturday',
-			'Sunday',
-		],
+		labels: dates,
 		datasets: [
 			{
 				label: 'Sleep Time (hours)',

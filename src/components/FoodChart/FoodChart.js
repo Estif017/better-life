@@ -1,17 +1,10 @@
 import { useState } from 'react';
 import { Line } from 'react-chartjs-2';
+import { dates } from '../../utils/daysLabel';
 
 const FoodChart = ({ options }) => {
 	const [foodData, setFoodData] = useState({
-		labels: [
-			'Monday',
-			'Tuesday',
-			'Wednesday',
-			'Thursday',
-			'Friday',
-			'Saturday',
-			'Sunday',
-		],
+		labels: dates,
 		datasets: [
 			{
 				label: 'Calories Consumed',

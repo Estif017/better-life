@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
+import { dates } from '../../utils/daysLabel';
 
 const WaterDataChart = ({ options }) => {
 	const [waterData, setWaterData] = useState({
-		labels: [
-			'Monday',
-			'Tuesday',
-			'Wednesday',
-			'Thursday',
-			'Friday',
-			'Saturday',
-			'Sunday',
-		],
+		labels: dates,
 		datasets: [
 			{
 				label: 'Water Intake (cups)',
