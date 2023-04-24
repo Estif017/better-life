@@ -21,9 +21,11 @@ const SleepTrackingChart = ({ options }) => {
 		],
 	});
 	return (
-		<div>
+		<div className='card'>
 			<h2>Sleep Tracker</h2>
-			<Line data={sleepData} options={options} />
+			<div className='chart'>
+				<Line data={sleepData} options={options} />
+			</div>
 		</div>
 	);
 };

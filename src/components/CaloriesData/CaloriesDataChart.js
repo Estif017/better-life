@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Line } from 'react-chartjs-2';
+import React, { useState } from 'react';
+import { Bar } from 'react-chartjs-2';
 
-const FoodChart = ({ options }) => {
-	const [foodData, setFoodData] = useState({
+const CaloriesDataChart = ({ options }) => {
+	const [caloriesData, setCaloriesData] = useState({
 		labels: [
 			'Monday',
 			'Tuesday',
@@ -14,12 +14,12 @@ const FoodChart = ({ options }) => {
 		],
 		datasets: [
 			{
-				label: 'Calories Consumed',
+				label: 'Calories In',
 				data: [2000, 2200, 1800, 2400, 2500, 2300, 1900],
 				backgroundColor: '#ff6384',
 			},
 			{
-				label: 'Calories Burned',
+				label: 'Calories Out',
 				data: [1000, 1200, 900, 1100, 1300, 1000, 800],
 				backgroundColor: '#36a2eb',
 			},
@@ -27,12 +27,12 @@ const FoodChart = ({ options }) => {
 	});
 	return (
 		<div className='card'>
-			<h2>Food Data</h2>
+			<h2>Calories In/Out Comparison</h2>
 			<div className='chart'>
-				<Line data={foodData} options={options} />
+				<Bar data={caloriesData} options={options} />
 			</div>
 		</div>
 	);
 };
 
-export default FoodChart;
+export default CaloriesDataChart;

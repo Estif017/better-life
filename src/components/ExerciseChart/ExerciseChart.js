@@ -21,9 +21,11 @@ const ExerciseChart = ({ options }) => {
 		],
 	});
 	return (
-		<div>
+		<div className='card'>
 			<h2>Exercise Tracker</h2>
-			<Bar data={exerciseData} options={options} />
+			<div className='chart'>
+				<Bar data={exerciseData} options={options} />
+			</div>
 		</div>
 	);
 };

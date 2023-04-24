@@ -21,9 +21,11 @@ const WaterDataChart = ({ options }) => {
 		],
 	});
 	return (
-		<div>
+		<div className='card'>
 			<h2>Water Tracker</h2>
-			<Doughnut data={waterData} options={options} />
+			<div className='chart'>
+				<Doughnut className='Doughnut' data={waterData} options={options} />
+			</div>
 		</div>
 	);
 };
