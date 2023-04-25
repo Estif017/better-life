@@ -6,7 +6,7 @@
 	color: #000000;
 	padding: 50px 0;
 }
-.card-container {
+.dashboard-card-container {
 	width: 80%;
 	margin: 0 auto;
 	display: flex;
@@ -15,7 +15,7 @@
 	margin-top: 20px;
 }
 
-.card {
+.dashboard-card {
 	background-color: #fff;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
@@ -28,11 +28,11 @@
 	justify-content: space-between;
 }
 
-.card h2 {
+.dashboard-card h2 {
 	margin-bottom: 10px;
 }
 
-.chart {
+.dashboard-chart {
 	height: 250px;
 }
 
@@ -42,17 +42,17 @@
 		width: 100%;
 	}
 
-	.chart {
+	.dashboard-chart {
 		height: 200px;
 	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-	.card {
+	.dashboard-card {
 		width: 48%;
 	}
 
-	.chart {
+	.dashboard-chart {
 		height: 250px;
 	}
 }

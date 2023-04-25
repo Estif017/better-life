@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { About, Contact, Dashboard, HomePage, InsertData } from './pages';
+import { Contact, Dashboard, HomePage, InsertData } from './pages';
 import { Footer, Navbar } from './components';
 import './App.css';
 

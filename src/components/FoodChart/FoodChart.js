@@ -42,9 +42,9 @@ const FoodChart = ({ options, setData }) => {
 	}, [setData]);
 
 	return (
-		<div className='card'>
+		<div className='dashboard-card'>
 			<h2>Food Data</h2>
-			<div className='chart'>
+			<div className='dashboard-chart'>
 				<Line data={foodData} options={options} />
 			</div>
 		</div>

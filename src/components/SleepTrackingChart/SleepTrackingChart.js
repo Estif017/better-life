@@ -29,9 +29,9 @@ const SleepTrackingChart = ({ options, setData }) => {
 		}
 	}, [setData]);
 	return (
-		<div className='card'>
+		<div className='dashboard-card'>
 			<h2>Sleep Tracker</h2>
-			<div className='chart'>
+			<div className='dashboard-chart'>
 				<Line data={sleepData} options={options} />
 			</div>
 		</div>

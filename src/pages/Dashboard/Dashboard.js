@@ -20,7 +20,7 @@ const Dashboard = ({ setData }) => {
 	return (
 		<div className='dashboard'>
 			<h1>Hi there! Here is Your Dashboard</h1>
-			<div className='card-container'>
+			<div className='dashboard-card-container'>
 				<FoodChart options={options} setData={setData} />
 				<ExerciseChart options={options} setData={setData} />
 				<WaterDataChart options={options} setData={setData} />
