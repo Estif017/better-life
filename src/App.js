@@ -24,7 +24,6 @@ const App = () => {
 						/>
 						<Route path='/addData' element={<InsertData setData={setData} />} />
 						<Route path='/Contact' element={<Contact />} />
-						<Route path='/About' element={<About />} />
 					</Routes>
 				</div>
 				<Footer />
