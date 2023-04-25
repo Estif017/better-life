@@ -9,7 +9,7 @@ import {
 } from '../../components';
 import './Dashboard.css';
 
-const Dashboard = () => {
+const Dashboard = ({ setData }) => {
 	const options = {
 		scales: {
 			y: {
@@ -21,11 +21,11 @@ const Dashboard = () => {
 		<div className='dashboard'>
 			<h1>Hi there! Here is Your Dashboard</h1>
 			<div className='card-container'>
-				<FoodChart options={options} />
-				<ExerciseChart options={options} />
-				<WaterDataChart options={options} />
-				<SleepTrackingChart options={options} />
-				<CaloriesDataChart options={options} />
+				<FoodChart options={options} setData={setData} />
+				<ExerciseChart options={options} setData={setData} />
+				<WaterDataChart options={options} setData={setData} />
+				<SleepTrackingChart options={options} setData={setData} />
+				<CaloriesDataChart options={options} setData={setData} />
 			</div>
 		</div>
 	);

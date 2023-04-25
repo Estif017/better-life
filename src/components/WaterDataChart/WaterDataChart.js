@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { dates } from '../../utils/daysLabel';
 
-const WaterDataChart = ({ options }) => {
+const WaterDataChart = ({ options, setData }) => {
 	const [waterData, setWaterData] = useState({
 		labels: dates,
 		datasets: [
@@ -13,6 +13,16 @@ const WaterDataChart = ({ options }) => {
 			},
 		],
 	});
+	useEffect(() => {
+		const updatedWaterIntake = (waterData.datasets[0].data[6] =
+			setData.waterIntake);
+		if (setData !== null) {
+			setWaterData((prevState) => ({
+				...prevState,
+				data: [{ ...prevState.datasets[0].data }, updatedWaterIntake],
+			}));
+		}
+	}, [setData]);
 	return (
 		<div className='card'>
 			<h2>Water Tracker</h2>

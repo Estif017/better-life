@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { About, Contact, Dashboard, HomePage } from './pages';
+import { About, Contact, Dashboard, HomePage, InsertData } from './pages';
 import { Footer, Navbar } from './components';
 import './App.css';
 
 const App = () => {
+	const [activityData, setActivityData] = useState(null);
+	const setData = (data) => {
+		setActivityData(data);
+		return data;
+	};
+
 	return (
 		<BrowserRouter>
 			<div className='App'>
@@ -12,7 +18,11 @@ const App = () => {
 				<div className='container'>
 					<Routes>
 						<Route path='/' element={<HomePage />} />
-						<Route path='/dashboard' element={<Dashboard />} />
+						<Route
+							path='/dashboard'
+							element={<Dashboard setData={activityData} />}
+						/>
+						<Route path='/addData' element={<InsertData setData={setData} />} />
 						<Route path='/Contact' element={<Contact />} />
 						<Route path='/About' element={<About />} />
 					</Routes>
