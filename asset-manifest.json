@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/better-life/static/css/main.2362e128.css",
+    "main.js": "/better-life/static/js/main.1557da82.js",
+    "static/media/homePagePicture.jpg": "/better-life/static/media/homePagePicture.83d1296267905a5e40de.jpg",
+    "static/media/Jane.jpg": "/better-life/static/media/Jane.033a2f4a3aba5e9afbd0.jpg",
+    "index.html": "/better-life/index.html",
+    "main.2362e128.css.map": "/better-life/static/css/main.2362e128.css.map",
+    "main.1557da82.js.map": "/better-life/static/js/main.1557da82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2362e128.css",
+    "static/js/main.1557da82.js"
+  ]
+}
