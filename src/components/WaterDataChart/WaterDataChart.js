@@ -13,10 +13,11 @@ const WaterDataChart = ({ options, setData }) => {
 			},
 		],
 	});
+
 	useEffect(() => {
-		const updatedWaterIntake = (waterData.datasets[0].data[6] =
-			setData.waterIntake);
 		if (setData !== null) {
+			const updatedWaterIntake = (waterData.datasets[0].data[6] =
+				setData.waterIntake);
 			setWaterData((prevState) => ({
 				...prevState,
 				data: [{ ...prevState.datasets[0].data }, updatedWaterIntake],

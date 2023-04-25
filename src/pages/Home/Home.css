@@ -1,0 +1,59 @@
+#intro {
+	/* background-color: #f2bdcf; */
+	background-image: url('../../image/homePagePicture.jpg');
+
+	background-position: cover;
+	background-size: contain;
+}
+#intro h1 {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-us {
+	padding-top: 2%;
+}
+
+.card-container {
+	margin-bottom: 30px;
+}
+#getStartedbtn {
+	background-color: black;
+}
+
+#getStartedbtn:hover {
+	background-color: white;
+}
+.card {
+	min-width: 90%;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+	font-weight: bold;
+}
+
+.features-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 30px;
+}
+
+.features-col {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+.rounded-circle {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
