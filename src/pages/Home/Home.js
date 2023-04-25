@@ -6,7 +6,9 @@ import './Home.css';
 import KelliImage from '../../image/kelli.jpg';
 import EliasImage from '../../image/elias.jpg';
 import JaneImage from '../../image/Jane.jpg';
+import { useNavigate } from 'react-router';
 const Home = () => {
+	const navigate = useNavigate();
 	return (
 		<div>
 			<Container fluid className='text-white text-center py-5' id='intro'>
@@ -19,7 +21,7 @@ const Home = () => {
 					id='getStartedbtn'
 					variant='outline-light'
 					size='lg'
-					href='/addData'>
+					onClick={() => navigate('/addData')}>
 					Get Started
 				</Button>
 			</Container>
