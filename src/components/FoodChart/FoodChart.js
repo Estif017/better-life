@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import { dates } from '../../utils/daysLabel';
 
-const FoodChart = ({ options }) => {
+const FoodChart = ({ options, setData }) => {
 	const [foodData, setFoodData] = useState({
 		labels: dates,
 		datasets: [
@@ -18,6 +18,29 @@ const FoodChart = ({ options }) => {
 			},
 		],
 	});
+
+	useEffect(() => {
+		if (setData !== null) {
+			const updateCaloriesIntake = (foodData.datasets[0].data[6] =
+				setData.caloriesIntake);
+			const updateCaloriesOuttake = (foodData.datasets[1].data[6] =
+				setData.caloriesOuttake);
+			setFoodData((prevState) => ({
+				...prevState,
+				datasets: [
+					{
+						...prevState.datasets[0],
+						data: [...prevState.datasets[0].data, updateCaloriesIntake],
+					},
+					{
+						...prevState.datasets[1],
+						data: [...prevState.datasets[1].data, updateCaloriesOuttake],
+					},
+				],
+			}));
+		}
+	}, [setData]);
+
 	return (
 		<div className='card'>
 			<h2>Food Data</h2>
