@@ -41,9 +41,9 @@ const CaloriesDataChart = ({ options, setData }) => {
 		}
 	}, [setData]);
 	return (
-		<div className='card'>
+		<div className='dashboard-card'>
 			<h2>Calories In/Out Comparison</h2>
-			<div className='chart'>
+			<div className='dashboard-chart'>
 				<Bar data={caloriesData} options={options} />
 			</div>
 		</div>

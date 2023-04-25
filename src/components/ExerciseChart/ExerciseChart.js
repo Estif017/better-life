@@ -30,9 +30,9 @@ const ExerciseChart = ({ options, setData }) => {
 		}
 	}, [setData]);
 	return (
-		<div className='card'>
+		<div className='dashboard-card'>
 			<h2>Exercise Tracker</h2>
-			<div className='chart'>
+			<div className='dashboard-chart'>
 				<Bar data={exerciseData} options={options} />
 			</div>
 		</div>
