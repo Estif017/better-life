@@ -15,7 +15,7 @@ Better Life is a web application built for Chrome Cycle, a small fitness busines
 
 ## Live Demo
 
-Check out the live demo [here](https://chrome-cycle.vercel.app/).
+Check out the live demo [here](https://estif017.github.io/better-life/).
 
 ## Getting Started
 
