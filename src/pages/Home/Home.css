@@ -16,13 +16,7 @@
 .card-container {
 	margin-bottom: 30px;
 }
-#getStartedbtn {
-	background-color: black;
-}
 
-#getStartedbtn:hover {
-	background-color: white;
-}
 .card {
 	min-width: 90%;
 	border: none;

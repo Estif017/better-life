@@ -19,7 +19,7 @@ const Home = () => {
 					id='getStartedbtn'
 					variant='outline-light'
 					size='lg'
-					href='/signup'>
+					href='/addData'>
 					Get Started
 				</Button>
 			</Container>
@@ -62,7 +62,10 @@ const Home = () => {
 							<Card.Body>
 								<Card.Title className='card-title'>Track Workouts</Card.Title>
 								<Card.Text>
-									Log your workouts and monitor your progress over time.
+									Log your workouts and track your progress over time. Whether
+									you're looking to build strength, increase endurance, or just
+									stay active, our platform makes it easy to set goals, track
+									your progress, and stay motivated.
 								</Card.Text>
 							</Card.Body>
 						</Card>
@@ -72,7 +75,9 @@ const Home = () => {
 							<Card.Body>
 								<Card.Title className='card-title'>Class Packages</Card.Title>
 								<Card.Text>
-									Choose a class package that fits to your fitness goals.
+									Choose the perfect plan that fits your fitness goals and
+									budget. Whether you want to commit to a long-term plan or try
+									out a few classes first, we have the right package for you.
 								</Card.Text>
 							</Card.Body>
 						</Card>
