@@ -16,7 +16,7 @@ const apiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
 
 const Contact = () => {
 	return (
-		<Container className='my-5'>
+		<Container className='my-5 contact-height'>
 			<h2 className='text-center mb-5'>Contact Us</h2>
 			<Row>
 				<Col md={6}>
