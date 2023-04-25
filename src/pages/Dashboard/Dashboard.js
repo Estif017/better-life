@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Chart as ChartJS } from 'chart.js/auto';
 import {
 	CaloriesDataChart,
@@ -18,16 +19,57 @@ const Dashboard = ({ setData }) => {
 		},
 	};
 	return (
-		<div className='dashboard'>
-			<h1>Hi there! Here is Your Dashboard</h1>
-			<div className='dashboard-card-container'>
-				<FoodChart options={options} setData={setData} />
-				<ExerciseChart options={options} setData={setData} />
-				<WaterDataChart options={options} setData={setData} />
-				<SleepTrackingChart options={options} setData={setData} />
-				<CaloriesDataChart options={options} setData={setData} />
-			</div>
-		</div>
+		<Container className='dashboard my-5'>
+			<h1 className='text-center mb-5'>Hi there! Here is Your Dashboard</h1>
+			<Row className='equal-cards'>
+				<Col md={6} className='mb-4'>
+					<Card>
+						<Card.Body>
+							<div className='chart-container'>
+								<FoodChart options={options} setData={setData} />
+							</div>
+						</Card.Body>
+					</Card>
+				</Col>
+
+				<Col md={6} className='mb-4'>
+					<Card>
+						<Card.Body>
+							<div className='chart-container'>
+								<ExerciseChart options={options} setData={setData} />
+							</div>
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col md={6} className='mb-4'>
+					<Card>
+						<Card.Body>
+							<div className='chart-container' id='waterChart'>
+								<WaterDataChart options={options} setData={setData} />
+							</div>
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col md={6} className='mb-4'>
+					<Card>
+						<Card.Body>
+							<div className='chart-container'>
+								<SleepTrackingChart options={options} setData={setData} />
+							</div>
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col md={6} className='mb-4'>
+					<Card>
+						<Card.Body>
+							<div className='chart-container'>
+								<CaloriesDataChart options={options} setData={setData} />
+							</div>
+						</Card.Body>
+					</Card>
+				</Col>
+			</Row>
+		</Container>
 	);
 };
 
